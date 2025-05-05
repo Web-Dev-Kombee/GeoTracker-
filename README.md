@@ -3,7 +3,7 @@ Geo Tracker🗺 - ASP.NET Core Web App
 Geo Tracker is a secure and interactive ASP.NET Core 8.0 web application featuring user authentication, 
 session management, Google Maps integration, and email notifications. It follows clean architecture and uses Entity Framework Core with the Code First approach.
 
-## �� Project Structure
+## 🗺 Project Structure
 
 ```
 GeoTracker/
@@ -47,7 +47,7 @@ GeoTracker/
 
 ---
 
-## �� Authentication & Session
+## 🔐 Authentication & Session
 
 User's email is securely stored using `HttpContext.Session`. All authenticated routes validate the session before proceeding using a custom extension method.
 
@@ -75,7 +75,7 @@ Inject `EmailService` where needed to send messages.
 
 ---
 
-## ��️ Map Feature
+## 🗺 Map Feature
 
 - Accepts user-entered **latitude** and **longitude**
 - Displays a **marker** using Google Maps
@@ -83,7 +83,7 @@ Inject `EmailService` where needed to send messages.
 
 ---
 
-## �� Validations
+## 🔑 Validations
 
 - ✅ JavaScript validation for form fields (age, name, etc.)
 - ✅ Razor Data Annotations for server-side validation
@@ -91,7 +91,7 @@ Inject `EmailService` where needed to send messages.
 
 ---
 
-## ��️ Technologies Used
+## 👩‍💻 Technologies Used
 
 - ASP.NET Core 8.0 (Razor Pages + MVC)
 - Entity Framework Core (Code First)
@@ -102,7 +102,7 @@ Inject `EmailService` where needed to send messages.
 
 ---
 
-## �� Getting Started
+## 🌟 Getting Started
 
 1. **Clone the repo:**
    ```bash
@@ -129,12 +129,12 @@ Inject `EmailService` where needed to send messages.
 
 ---
    
-## �� License
+## 🗝 License
 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-## �� Output 
+## 🎯 Output 
 
 Register Page:
 ![image](https://github.com/user-attachments/assets/5aaec0ff-7ac2-4dc1-bed2-b03bf2eaa53b)
