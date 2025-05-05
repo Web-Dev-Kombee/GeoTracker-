@@ -1,0 +1,335 @@
+2025-04-29 09:14:07.858 +05:30 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 09:14:08.095 +05:30 [INF] Now listening on: https://localhost:7106
+2025-04-29 09:14:08.097 +05:30 [INF] Now listening on: http://localhost:5277
+2025-04-29 09:14:08.123 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 09:14:08.124 +05:30 [INF] Hosting environment: Development
+2025-04-29 09:14:08.125 +05:30 [INF] Content root path: C:\Users\Admin\Downloads\MapTask\MapTask
+2025-04-29 09:14:09.445 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2025-04-29 09:14:09.572 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 09:14:09.609 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 09:14:09.771 +05:30 [INF] Executing ViewResult, running view Login.
+2025-04-29 09:14:09.966 +05:30 [INF] Executed ViewResult - view Login executed in 198.4447ms.
+2025-04-29 09:14:09.972 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Login (MapTask) in 361.2946ms
+2025-04-29 09:14:09.974 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 09:14:09.980 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 09:14:09.980 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2025-04-29 09:14:09.980 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2025-04-29 09:14:09.988 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2025-04-29 09:14:09.980 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/MapTask.styles.css?v=Wylos39WKAi868LFFMxGXrLR8AFiFAgOHW3RetHvtrs - null null
+2025-04-29 09:14:09.997 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 552.0622ms
+2025-04-29 09:14:09.988 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/lib/jquery/dist/jquery.min.js - null null
+2025-04-29 09:14:09.994 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2025-04-29 09:14:10.000 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2025-04-29 09:14:10.005 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - null null
+2025-04-29 09:14:10.019 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 39.0715ms
+2025-04-29 09:14:10.021 +05:30 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2025-04-29 09:14:10.021 +05:30 [INF] The file /css/site.css was not modified
+2025-04-29 09:14:10.021 +05:30 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2025-04-29 09:14:10.022 +05:30 [INF] The file /MapTask.styles.css was not modified
+2025-04-29 09:14:10.026 +05:30 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2025-04-29 09:14:10.028 +05:30 [INF] The file /js/site.js was not modified
+2025-04-29 09:14:10.031 +05:30 [INF] The file /lib/jquery-validation/dist/jquery.validate.min.js was not modified
+2025-04-29 09:14:10.033 +05:30 [INF] The file /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js was not modified
+2025-04-29 09:14:10.036 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/lib/bootstrap/dist/css/bootstrap.min.css - 304 null text/css 56.9598ms
+2025-04-29 09:14:10.038 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 304 null text/css 58.258ms
+2025-04-29 09:14:10.039 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 51.1375ms
+2025-04-29 09:14:10.041 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/MapTask.styles.css?v=Wylos39WKAi868LFFMxGXrLR8AFiFAgOHW3RetHvtrs - 304 null text/css 60.3311ms
+2025-04-29 09:14:10.042 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/lib/jquery/dist/jquery.min.js - 304 null text/javascript 54.8824ms
+2025-04-29 09:14:10.043 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 304 null text/javascript 49.7742ms
+2025-04-29 09:14:10.045 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/lib/jquery-validation/dist/jquery.validate.min.js - 304 null text/javascript 44.7117ms
+2025-04-29 09:14:10.046 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - 304 null text/javascript 41.4715ms
+2025-04-29 09:14:10.051 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 09:14:10.164 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 112.9882ms
+2025-04-29 09:14:36.184 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/Account/Register - null null
+2025-04-29 09:14:36.195 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 09:14:36.200 +05:30 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 09:14:36.207 +05:30 [INF] Executing ViewResult, running view Register.
+2025-04-29 09:14:36.220 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/Account/Register - null null
+2025-04-29 09:14:36.225 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 09:14:36.226 +05:30 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 09:14:36.229 +05:30 [INF] Executing ViewResult, running view Register.
+2025-04-29 09:14:36.238 +05:30 [INF] Executed ViewResult - view Register executed in 31.5192ms.
+2025-04-29 09:14:36.239 +05:30 [INF] Executed ViewResult - view Register executed in 10.5267ms.
+2025-04-29 09:14:36.245 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Register (MapTask) in 42.8874ms
+2025-04-29 09:14:36.246 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Register (MapTask) in 18.4643ms
+2025-04-29 09:14:36.248 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 09:14:36.250 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 09:14:36.251 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/Account/Register - 200 null text/html; charset=utf-8 67.1611ms
+2025-04-29 09:14:36.252 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/Account/Register - 200 null text/html; charset=utf-8 31.8225ms
+2025-04-29 09:14:36.272 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 09:14:36.276 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 4.222ms
+2025-04-29 09:14:36.308 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 09:14:36.320 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.5899ms
+2025-04-29 09:14:38.452 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2025-04-29 09:14:38.456 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 09:14:38.456 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 09:14:38.458 +05:30 [INF] Executing ViewResult, running view Login.
+2025-04-29 09:14:38.461 +05:30 [INF] Executed ViewResult - view Login executed in 3.0493ms.
+2025-04-29 09:14:38.462 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Login (MapTask) in 4.4787ms
+2025-04-29 09:14:38.464 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 09:14:38.466 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 14.4443ms
+2025-04-29 09:14:38.493 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 09:14:38.494 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 09:14:38.505 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 11.7664ms
+2025-04-29 09:14:38.511 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.3909ms
+2025-04-29 09:14:39.618 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/Account/Register - null null
+2025-04-29 09:14:39.622 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 09:14:39.623 +05:30 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 09:14:39.625 +05:30 [INF] Executing ViewResult, running view Register.
+2025-04-29 09:14:39.628 +05:30 [INF] Executed ViewResult - view Register executed in 2.9836ms.
+2025-04-29 09:14:39.629 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Register (MapTask) in 4.1845ms
+2025-04-29 09:14:39.630 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 09:14:39.633 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/Account/Register - 200 null text/html; charset=utf-8 14.1495ms
+2025-04-29 09:14:39.653 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 09:14:39.656 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 09:14:39.661 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 5.3726ms
+2025-04-29 09:14:39.671 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.2746ms
+2025-04-29 10:00:47.245 +05:30 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 10:00:47.428 +05:30 [INF] Now listening on: https://localhost:7106
+2025-04-29 10:00:47.429 +05:30 [INF] Now listening on: http://localhost:5277
+2025-04-29 10:00:47.451 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 10:00:47.452 +05:30 [INF] Hosting environment: Development
+2025-04-29 10:00:47.453 +05:30 [INF] Content root path: C:\Users\Admin\Downloads\MapTask\MapTask
+2025-04-29 10:00:48.035 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2025-04-29 10:00:48.191 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 10:00:48.238 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 10:00:48.388 +05:30 [INF] Executing ViewResult, running view Login.
+2025-04-29 10:00:48.561 +05:30 [INF] Executed ViewResult - view Login executed in 177.957ms.
+2025-04-29 10:00:48.568 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Login (MapTask) in 327.0131ms
+2025-04-29 10:00:48.569 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 10:00:48.576 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 544.0675ms
+2025-04-29 10:00:48.580 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 10:00:48.590 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 10.0874ms
+2025-04-29 10:00:48.600 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 10:00:48.634 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.7874ms
+2025-04-29 10:00:51.132 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/Account/Register - null null
+2025-04-29 10:00:51.141 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 10:00:51.145 +05:30 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 10:00:51.155 +05:30 [INF] Executing ViewResult, running view Register.
+2025-04-29 10:00:51.181 +05:30 [INF] Executed ViewResult - view Register executed in 27.0317ms.
+2025-04-29 10:00:51.182 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Register (MapTask) in 35.7536ms
+2025-04-29 10:00:51.184 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 10:00:51.187 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/Account/Register - 200 null text/html; charset=utf-8 55.5364ms
+2025-04-29 10:00:51.200 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 10:00:51.204 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 3.3516ms
+2025-04-29 10:00:51.206 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 10:00:51.223 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.0679ms
+2025-04-29 10:00:52.580 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2025-04-29 10:00:52.585 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 10:00:52.586 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 10:00:52.589 +05:30 [INF] Executing ViewResult, running view Login.
+2025-04-29 10:00:52.592 +05:30 [INF] Executed ViewResult - view Login executed in 3.0514ms.
+2025-04-29 10:00:52.594 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Login (MapTask) in 6.0295ms
+2025-04-29 10:00:52.595 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 10:00:52.596 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 17.0081ms
+2025-04-29 10:00:52.618 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 10:00:52.619 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 10:00:52.630 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 11.7761ms
+2025-04-29 10:00:52.633 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.1504ms
+2025-04-29 10:00:53.539 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/Account/Register - null null
+2025-04-29 10:00:53.544 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 10:00:53.545 +05:30 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 10:00:53.547 +05:30 [INF] Executing ViewResult, running view Register.
+2025-04-29 10:00:53.550 +05:30 [INF] Executed ViewResult - view Register executed in 2.9008ms.
+2025-04-29 10:00:53.552 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Register (MapTask) in 5.1957ms
+2025-04-29 10:00:53.553 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 10:00:53.555 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/Account/Register - 200 null text/html; charset=utf-8 15.782ms
+2025-04-29 10:00:53.582 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 10:00:53.582 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 10:00:53.587 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 5.1651ms
+2025-04-29 10:00:53.597 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.1801ms
+2025-04-29 10:01:01.404 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2025-04-29 10:01:01.409 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 10:01:01.411 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 10:01:01.414 +05:30 [INF] Executing ViewResult, running view Login.
+2025-04-29 10:01:01.417 +05:30 [INF] Executed ViewResult - view Login executed in 2.9196ms.
+2025-04-29 10:01:01.420 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Login (MapTask) in 6.1994ms
+2025-04-29 10:01:01.422 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 10:01:01.423 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 19.5603ms
+2025-04-29 10:01:01.445 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 10:01:01.445 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 10:01:01.457 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 12.0925ms
+2025-04-29 10:01:01.460 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.39ms
+2025-04-29 10:01:02.393 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/Account/Register - null null
+2025-04-29 10:01:02.398 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 10:01:02.399 +05:30 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 10:01:02.402 +05:30 [INF] Executing ViewResult, running view Register.
+2025-04-29 10:01:02.405 +05:30 [INF] Executed ViewResult - view Register executed in 2.8826ms.
+2025-04-29 10:01:02.406 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Register (MapTask) in 4.6747ms
+2025-04-29 10:01:02.407 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 10:01:02.408 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/Account/Register - 200 null text/html; charset=utf-8 15.0671ms
+2025-04-29 10:01:02.431 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 10:01:02.431 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 10:01:02.434 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 3.6116ms
+2025-04-29 10:01:02.443 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.5482ms
+2025-04-29 10:02:10.071 +05:30 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 10:02:10.259 +05:30 [INF] Now listening on: https://localhost:7106
+2025-04-29 10:02:10.261 +05:30 [INF] Now listening on: http://localhost:5277
+2025-04-29 10:02:10.284 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 10:02:10.286 +05:30 [INF] Hosting environment: Development
+2025-04-29 10:02:10.287 +05:30 [INF] Content root path: C:\Users\Admin\Downloads\MapTask\MapTask
+2025-04-29 10:02:10.788 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2025-04-29 10:02:10.883 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 10:02:10.910 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 10:02:11.026 +05:30 [INF] Executing ViewResult, running view Login.
+2025-04-29 10:02:11.161 +05:30 [INF] Executed ViewResult - view Login executed in 135.5062ms.
+2025-04-29 10:02:11.168 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Login (MapTask) in 255.5182ms
+2025-04-29 10:02:11.170 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 10:02:11.178 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 395.1478ms
+2025-04-29 10:02:11.192 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 10:02:11.201 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 9.2597ms
+2025-04-29 10:02:11.220 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 10:02:11.250 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.2079ms
+2025-04-29 10:02:16.237 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/Account/Register - null null
+2025-04-29 10:02:16.245 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 10:02:16.248 +05:30 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 10:02:16.255 +05:30 [INF] Executing ViewResult, running view Register.
+2025-04-29 10:02:16.283 +05:30 [INF] Executed ViewResult - view Register executed in 27.7301ms.
+2025-04-29 10:02:16.285 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Register (MapTask) in 35.7158ms
+2025-04-29 10:02:16.286 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 10:02:16.288 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/Account/Register - 200 null text/html; charset=utf-8 51.3472ms
+2025-04-29 10:02:16.309 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 10:02:16.310 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 10:02:16.313 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 4.0441ms
+2025-04-29 10:02:16.328 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.6628ms
+2025-04-29 10:02:17.859 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2025-04-29 10:02:17.864 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 10:02:17.866 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 10:02:17.870 +05:30 [INF] Executing ViewResult, running view Login.
+2025-04-29 10:02:17.874 +05:30 [INF] Executed ViewResult - view Login executed in 3.133ms.
+2025-04-29 10:02:17.875 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Login (MapTask) in 5.9801ms
+2025-04-29 10:02:17.876 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 10:02:17.877 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 18.0504ms
+2025-04-29 10:02:17.897 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 10:02:17.897 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 10:02:17.906 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 9.6036ms
+2025-04-29 10:02:17.911 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.9857ms
+2025-04-29 10:02:19.260 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/Account/Register - null null
+2025-04-29 10:02:19.265 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 10:02:19.266 +05:30 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 10:02:19.269 +05:30 [INF] Executing ViewResult, running view Register.
+2025-04-29 10:02:19.271 +05:30 [INF] Executed ViewResult - view Register executed in 2.8105ms.
+2025-04-29 10:02:19.273 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Register (MapTask) in 4.3354ms
+2025-04-29 10:02:19.274 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 10:02:19.275 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/Account/Register - 200 null text/html; charset=utf-8 15.4376ms
+2025-04-29 10:02:19.296 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 10:02:19.296 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 10:02:19.299 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 3.23ms
+2025-04-29 10:02:19.307 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.4575ms
+2025-04-29 10:06:36.923 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2025-04-29 10:06:36.941 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 10:06:36.943 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 10:06:36.945 +05:30 [INF] Executing ViewResult, running view Login.
+2025-04-29 10:06:36.948 +05:30 [INF] Executed ViewResult - view Login executed in 3.2767ms.
+2025-04-29 10:06:36.964 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Login (MapTask) in 19.5013ms
+2025-04-29 10:06:36.965 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 10:06:36.967 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 44.3922ms
+2025-04-29 10:06:36.990 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 10:06:36.994 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 3.6043ms
+2025-04-29 10:06:37.006 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 10:06:37.029 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.4376ms
+2025-04-29 10:06:38.853 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/Account/Register - null null
+2025-04-29 10:06:38.857 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 10:06:38.858 +05:30 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 10:06:38.860 +05:30 [INF] Executing ViewResult, running view Register.
+2025-04-29 10:06:38.863 +05:30 [INF] Executed ViewResult - view Register executed in 3.1481ms.
+2025-04-29 10:06:38.864 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Register (MapTask) in 4.3348ms
+2025-04-29 10:06:38.865 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 10:06:38.867 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/Account/Register - 200 null text/html; charset=utf-8 13.922ms
+2025-04-29 10:06:38.884 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 10:06:38.888 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 3.8823ms
+2025-04-29 10:06:38.893 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 10:06:38.906 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.5196ms
+2025-04-29 12:21:29.193 +05:30 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 12:21:29.402 +05:30 [INF] Now listening on: https://localhost:7106
+2025-04-29 12:21:29.404 +05:30 [INF] Now listening on: http://localhost:5277
+2025-04-29 12:21:29.429 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 12:21:29.430 +05:30 [INF] Hosting environment: Development
+2025-04-29 12:21:29.431 +05:30 [INF] Content root path: C:\Users\Admin\Downloads\MapTask\MapTask
+2025-04-29 12:21:30.084 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2025-04-29 12:21:30.173 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 12:21:30.200 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 12:21:30.312 +05:30 [INF] Executing ViewResult, running view Login.
+2025-04-29 12:21:30.437 +05:30 [INF] Executed ViewResult - view Login executed in 126.2042ms.
+2025-04-29 12:21:30.443 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Login (MapTask) in 239.8606ms
+2025-04-29 12:21:30.445 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 12:21:30.451 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 370.0777ms
+2025-04-29 12:21:30.459 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 12:21:30.467 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 8.1581ms
+2025-04-29 12:21:30.491 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 12:21:30.523 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.9561ms
+2025-04-29 12:21:32.387 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/Account/Register - null null
+2025-04-29 12:21:32.396 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 12:21:32.399 +05:30 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 12:21:32.405 +05:30 [INF] Executing ViewResult, running view Register.
+2025-04-29 12:21:32.429 +05:30 [INF] Executed ViewResult - view Register executed in 24.544ms.
+2025-04-29 12:21:32.430 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Register (MapTask) in 30.5227ms
+2025-04-29 12:21:32.431 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 12:21:32.433 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/Account/Register - 200 null text/html; charset=utf-8 45.5265ms
+2025-04-29 12:21:32.456 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 12:21:32.458 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 12:21:32.461 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 5.5742ms
+2025-04-29 12:21:32.479 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.2312ms
+2025-04-29 12:21:44.001 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7106/Account/Register - application/x-www-form-urlencoded 268
+2025-04-29 12:21:44.006 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 12:21:44.014 +05:30 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(MapTask.Models.User) on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 12:21:44.814 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-04-29 12:21:44.922 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Age], [Email], [FirstName], [LastName], [Password])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-04-29 12:21:48.524 +05:30 [INF] Executing RedirectResult, redirecting to /.
+2025-04-29 12:21:48.531 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Register (MapTask) in 4514.3984ms
+2025-04-29 12:21:48.534 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 12:21:48.538 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2025-04-29 12:21:48.540 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7106/Account/Register - 302 0 null 4538.8989ms
+2025-04-29 12:21:48.543 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 12:21:48.545 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 12:21:48.547 +05:30 [INF] Executing ViewResult, running view Login.
+2025-04-29 12:21:48.550 +05:30 [INF] Executed ViewResult - view Login executed in 3.2691ms.
+2025-04-29 12:21:48.551 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Login (MapTask) in 4.811ms
+2025-04-29 12:21:48.552 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 12:21:48.554 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 16.1053ms
+2025-04-29 12:21:48.573 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 12:21:48.584 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 12:21:48.589 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 4.748ms
+2025-04-29 12:21:48.605 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.4339ms
+2025-04-29 17:18:16.731 +05:30 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 17:18:17.078 +05:30 [INF] Now listening on: https://localhost:7106
+2025-04-29 17:18:17.079 +05:30 [INF] Now listening on: http://localhost:5277
+2025-04-29 17:18:17.110 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 17:18:17.110 +05:30 [INF] Hosting environment: Development
+2025-04-29 17:18:17.111 +05:30 [INF] Content root path: C:\Users\Admin\Downloads\MapTask-FinalDemo\MapTask
+2025-04-29 17:18:17.881 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2025-04-29 17:18:18.042 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 17:18:18.074 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 17:18:18.206 +05:30 [INF] Executing ViewResult, running view Login.
+2025-04-29 17:18:18.355 +05:30 [INF] Executed ViewResult - view Login executed in 148.3764ms.
+2025-04-29 17:18:18.362 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Login (MapTask) in 286.1694ms
+2025-04-29 17:18:18.365 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Login (MapTask)'
+2025-04-29 17:18:18.374 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 497.7208ms
+2025-04-29 17:18:18.374 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 17:18:18.387 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 12.7703ms
+2025-04-29 17:18:18.393 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 17:18:18.443 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.7265ms
+2025-04-29 17:18:56.215 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/Account/Register - null null
+2025-04-29 17:18:56.228 +05:30 [INF] Executing endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 17:18:56.231 +05:30 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller MapTask.Controllers.AccountController (MapTask).
+2025-04-29 17:18:56.239 +05:30 [INF] Executing ViewResult, running view Register.
+2025-04-29 17:18:56.268 +05:30 [INF] Executed ViewResult - view Register executed in 29.9675ms.
+2025-04-29 17:18:56.274 +05:30 [INF] Executed action MapTask.Controllers.AccountController.Register (MapTask) in 41.1657ms
+2025-04-29 17:18:56.276 +05:30 [INF] Executed endpoint 'MapTask.Controllers.AccountController.Register (MapTask)'
+2025-04-29 17:18:56.277 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/Account/Register - 200 null text/html; charset=utf-8 62.7546ms
+2025-04-29 17:18:56.285 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 17:18:56.289 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 4.3187ms
+2025-04-29 17:18:56.290 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2025-04-29 17:18:56.305 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.4132ms

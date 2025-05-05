@@ -1,0 +1,106 @@
+﻿@model MapTask.Models.User
+@{
+    ViewData["Title"] = "Register";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<h2 class="text-center text-primary my-4">📃 Create Your Account</h2>
+<div class="container d-flex justify-content-center">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 600px;">
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-danger text-center">
+                @ViewBag.Message
+            </div>
+        }
+        <form asp-action="Register" method="post">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label asp-for="FirstName" class="form-label">First Name</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                        <input asp-for="FirstName" class="form-control" onkeypress="return isLetter(event)" />
+                    </div>
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="LastName" class="form-label">Last Name</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                        <input asp-for="LastName" class="form-control" onkeypress="return isLetter(event)" />
+                    </div>
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+                <div class="col-12">
+                    <label asp-for="Email" class="form-label">Email</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                        <input asp-for="Email" class="form-control" type="email" />
+                    </div>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="col-12">
+                    <label asp-for="Age" class="form-label">Age</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-calendar-fill"></i></span>
+                        <input asp-for="Age" class="form-control" id="AgeField" maxlength="3"
+                               oninput="limitAgeDigits(this)" onblur="validateAge(this)" />
+                    </div>
+                    <span asp-validation-for="Age" class="text-danger"></span>
+                    <div id="ageWarning" class="text-warning mt-1 d-none">Age must be between 18 and 100.</div>
+                </div>
+                <div class="col-12 d-grid mt-4">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-check-circle me-2"></i>Register
+                    </button>
+                </div>
+                <div class="text-center mt-3">
+                    <a asp-controller="Account" asp-action="Login" class="text-decoration-none">
+                        Already have an account? <strong>Login</strong>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function isLetter(e) {
+            const char = String.fromCharCode(e.keyCode);
+            const regex = /^[A-Za-z\s]+$/;
+            if (!regex.test(char)) {
+                e.preventDefault();
+                return false;
+            }
+            return true;
+        }
+        function validateAge(input) {
+            const value = parseInt(input.value);
+            const warning = document.getElementById("ageWarning");
+            if (!isNaN(value) && (value < 18 || value > 100)) {
+                warning.classList.remove("d-none");
+            } else {
+                warning.classList.add("d-none");
+            }
+        }
+        function limitAgeDigits(input) {
+            input.value = input.value.replace(/\D/g, '');
+            if (input.value.length > 3) {
+                input.value = input.value.slice(0, 3);
+            }
+            const value = parseInt(input.value);
+            if (!isNaN(value) && value > 100) {
+                input.value = 100;
+            }
+        }
+    </script>
+}
+
+
+
+
+
+

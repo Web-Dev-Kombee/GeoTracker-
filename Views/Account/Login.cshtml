@@ -1,0 +1,57 @@
+﻿@model MapTask.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h2 class="text-center text-primary my-4">🔐 Login</h2>
+<div class="container d-flex justify-content-center">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 600px;">
+        @if (ViewBag.ShowErrorModal != null && (bool)ViewBag.ShowErrorModal)
+        {
+            <div class="alert alert-danger text-center" role="alert">
+                Invalid email or password. Please try again.
+            </div>
+        }
+
+        <form asp-action="Login" method="post">
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label">Email</label>
+                <input asp-for="Email" type="email" class="form-control" placeholder="Enter your email" autocomplete="email" />
+                <span asp-validation-for="Email" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label">Password</label>
+                <input asp-for="Password" type="password" class="form-control" placeholder="Enter your password" autocomplete="current-password" />
+                <span asp-validation-for="Password" class="text-danger small"></span>
+            </div>
+
+            <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-check-circle me-2"></i>Login
+                </button>
+            </div>
+
+            <div class="text-center">
+                <small>
+                    Don’t have an account?
+                    <a asp-controller="Account" asp-action="Register" class="text-decoration-none">Register</a>
+                </small>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        // Show Toast if login failed
+        window.onload = function () {
+            var toastEl = document.getElementById('toastMessage');
+            if (toastEl) {
+                var toast = new bootstrap.Toast(toastEl, { delay: 3000 });
+                toast.show();
+            }
+        };
+    </script>
+}

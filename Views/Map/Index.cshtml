@@ -1,0 +1,165 @@
+﻿@model MapTask.ViewModels.MapViewModel
+
+@{
+	ViewData["Title"] = "Map Viewer";
+	var location = ViewBag.Location as MapTask.Models.Location;
+	var searchHistory = ViewBag.SearchHistory as List<MapTask.Models.Location>;
+	bool showMap = ViewBag.ShowMap ?? false;
+}
+
+<div class="container mt-5">
+	<div class="card shadow-lg border-0">
+		<div class="card-body p-4">
+			<h2 class="text-center text-primary mb-4">📍 Location Finder</h2>
+
+			<form method="post">
+				<input type="hidden" name="fromHistory" id="fromHistory" value="false" />
+
+				<div class="row g-3">
+					<div class="col-md-5">
+						<label asp-for="Location.Latitude" class="form-label">Latitude</label>
+						<input asp-for="Location.Latitude"
+							   type="number"
+							   step="0.000001"
+							   min="-90"
+							   max="90"
+							   class="form-control"
+							   oninput="validateMaxLength(this, 10)" />
+						<span asp-validation-for="Location.Latitude" class="text-danger small"></span>
+					</div>
+					<div class="col-md-1 d-flex align-items-end">
+						<button type="button" class="btn btn-outline-secondary btn-sm w-100 clear-btn"
+								onclick="document.getElementById('Location_Latitude').value=''">
+							Clear
+						</button>
+					</div>
+
+					<div class="col-md-5">
+						<label asp-for="Location.Longitude" class="form-label">Longitude</label>
+						<input asp-for="Location.Longitude"
+							   type="number"
+							   step="0.000001"
+							   min="-180"
+							   max="180"
+							   class="form-control"
+							   oninput="validateMaxLength(this, 11)" />
+						<span asp-validation-for="Location.Longitude" class="text-danger small"></span>
+					</div>
+					<div class="col-md-1 d-flex align-items-end">
+						<button type="button" class="btn btn-outline-secondary btn-sm w-100 clear-btn"
+								onclick="document.getElementById('Location_Longitude').value=''">
+							Clear
+						</button>
+					</div>
+				</div>
+
+				<div class="text-center mt-4">
+					<button type="submit" class="btn btn-sm btn-primary px-4 py-2 submit-btn">🔍 Show Map</button>
+				</div>
+				<div class="text-end mt-2">
+					<button type="button" class="btn btn-sm btn-outline-danger clear-btn"
+							onclick="clearAllFields()">
+						❌ Clear All
+					</button>
+				</div>
+
+			</form>
+
+			@if (Model.ShowMap)
+			{
+				<div class="mt-5">
+					<h5 class="text-success">🗺️ Location Map</h5>
+					<div id="map" class="border rounded shadow-sm" style="height: 400px;"></div>
+				</div>
+			}
+
+			@if (Model.SearchHistory.Any())
+			{
+				<div class="mt-5">
+					<h5 class="mb-3">📌 Search History</h5>
+					<ul class="list-group shadow-sm">
+						@foreach (var loc in Model.SearchHistory)
+						{
+							<li class="list-group-item list-group-item-action history-item"
+								onclick="loadMapFromHistory(@loc.Latitude, @loc.Longitude)">
+								Lat: @loc.Latitude, Lng: @loc.Longitude
+							</li>
+						}
+					</ul>
+				</div>
+			}
+		</div>
+	</div>
+</div>
+
+<style>
+	.submit-btn,
+	.clear-btn {
+		transition: all 0.3s ease;
+	}
+
+		.submit-btn:hover {
+			background-color: #0a58ca;
+			transform: scale(1.03);
+		}
+
+		.clear-btn:hover {
+			background-color: #ddd;
+			color: #000;
+			transform: scale(1.02);
+		}
+
+
+	.history-item {
+		cursor: pointer;
+		transition: background 0.3s ease;
+	}
+
+		.history-item:hover {
+			background-color: #f8f9fa;
+		}
+</style>
+
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+
+	<script>
+		let map;
+		function initMap() {
+			var lat = parseFloat('@Model.Location.Latitude');
+			var lng = parseFloat('@Model.Location.Longitude');
+			var mapOptions = {
+				center: { lat: lat, lng: lng },
+				zoom: 12
+			};
+			map = new google.maps.Map(document.getElementById("map"), mapOptions);
+			new google.maps.Marker({ position: { lat: lat, lng: lng }, map: map });
+		}
+
+		function loadMapFromHistory(lat, lng) {
+			document.getElementById("Location_Latitude").value = lat;
+			document.getElementById("Location_Longitude").value = lng;
+			document.getElementById("fromHistory").value = "true";
+			document.forms[0].submit();
+		}
+
+		function validateMaxLength(input, maxLength) {
+			if (input.value.length > maxLength) {
+				input.value = input.value.slice(0, maxLength);
+			}
+		}
+
+		function clearAllFields() {
+			document.getElementById("Location_Latitude").value = '';
+			document.getElementById("Location_Longitude").value = '';
+		}
+
+	</script>
+
+	@if (Model.ShowMap)
+	{
+		<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-PCkrN880P0PuaZnHu4q1w9Uq-qT3944&callback=initMap">
+		</script>
+	}
+}
