@@ -1,4 +1,4 @@
-Geo Tracker🗺 - ASP.NET Core Web App
+# Geo Tracker🗺 - ASP.NET Core Web App
 
 Geo Tracker is a secure and interactive ASP.NET Core 8.0 web application featuring user authentication, 
 session management, Google Maps integration, and email notifications. It follows clean architecture and uses Entity Framework Core with the Code First approach.
@@ -59,7 +59,7 @@ if (!HttpContext.UserIsAuthenticated()) return this.RedirectToLogin();
 
 ## ✉️ Email Configuration
 
-Update your `appsettings.json` file:
+Update your `appsettings.Development.json` file:
 
 ```json
 "EmailSettings": {
@@ -70,8 +70,6 @@ Update your `appsettings.json` file:
 ```
 
 Inject `EmailService` where needed to send messages.
-
----
 
 ---
 
@@ -106,10 +104,10 @@ Inject `EmailService` where needed to send messages.
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/your-username/GeoTracker.git
+   git clone https://github.com/Web-Dev-Kombee/GeoTracker.git
    ```
 
-2. **Update `appsettings.json`:**
+2. **Update `appsettings.Development.json`:**
    ```json
    "ConnectionStrings": {
      "DefaultConnection": "Server=.;Database=MapTaskDB;Trusted_Connection=True;"
@@ -128,12 +126,6 @@ Inject `EmailService` where needed to send messages.
    ```
 
 ---
-   
-## 🗝 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
 ## 🎯 Output 
 
 Register Page:
@@ -148,8 +140,38 @@ ChangePassword Page:
 Map page:
 ![image](https://github.com/user-attachments/assets/c06672dd-2fef-4ed7-8513-1daa5741ae8c)
 
+---
 
+## 🤝 **Contributing**
 
+We welcome contributions! Follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature/fix.
+3. Commit changes and open a **Pull Request**.
+
+---
+   
+## 🗝 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+## 👨‍💻 **Author**
+
+**Kombee Technologies**
+
+- 🌐 [Portfolio](https://github.com/kombee-technologies)
+- 💼 [LinkedIn](https://in.linkedin.com/company/kombee-global)
+- 🌍 [Website](https://www.kombee.com/)
+
+---
+
+<p align="center">
+  Built with ❤️ using .NET Razor Pages + MVC
+</p>
+
+---
 
 
 
