@@ -1,11 +1,48 @@
-﻿@model MapTask.Models.LoginViewModel
+@model MapTask.Models.LoginViewModel
 @{
     ViewData["Title"] = "Login";
 }
 
-<h2 class="text-center text-primary my-4">🔐 Login</h2>
-<div class="container d-flex justify-content-center">
-    <div class="card shadow-lg p-4" style="width: 100%; max-width: 600px;">
+<style>
+    body {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        overflow: hidden;
+        position: relative;
+    }
+
+        /* Torch Effect */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255, 255, 255, 0.1) 0%, transparent 80%);
+            z-index: 0;
+            transition: background 0.05s ease;
+        }
+
+    .login-card {
+        background-color: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        position: relative;
+        z-index: 1;
+    }
+</style>
+
+<div class="container d-flex align-items-center justify-content-center min-vh-100">
+    <div class="card login-card p-4 border-0 rounded-4" style="max-width: 500px; width: 100%;">
+        <div class="text-center mb-4">
+            <div class="display-6 fw-bold text-primary mb-2">🔐 Welcome Back</div>
+            <p class="text-muted">Please enter your credentials to log in</p>
+        </div>
+
         @if (ViewBag.ShowErrorModal != null && (bool)ViewBag.ShowErrorModal)
         {
             <div class="alert alert-danger text-center" role="alert">
@@ -13,29 +50,29 @@
             </div>
         }
 
-        <form asp-action="Login" method="post">
-            <div class="mb-3">
-                <label asp-for="Email" class="form-label">Email</label>
-                <input asp-for="Email" type="email" class="form-control" placeholder="Enter your email" autocomplete="email" />
+        <form asp-action="Login" method="post" novalidate>
+            <div class="form-floating mb-3">
+                <input asp-for="Email" class="form-control rounded-3" placeholder="name@example.com" />
+                <label asp-for="Email">Email address</label>
                 <span asp-validation-for="Email" class="text-danger small"></span>
             </div>
 
-            <div class="mb-3">
-                <label asp-for="Password" class="form-label">Password</label>
-                <input asp-for="Password" type="password" class="form-control" placeholder="Enter your password" autocomplete="current-password" />
+            <div class="form-floating mb-3">
+                <input asp-for="Password" type="password" class="form-control rounded-3" placeholder="Password" />
+                <label asp-for="Password">Password</label>
                 <span asp-validation-for="Password" class="text-danger small"></span>
             </div>
 
             <div class="d-grid mb-3">
-                <button type="submit" class="btn btn-primary">
-                    <i class="bi bi-check-circle me-2"></i>Login
+                <button type="submit" class="btn btn-primary btn-lg rounded-pill shadow-sm">
+                    <i class="bi bi-box-arrow-in-right me-2"></i> Login
                 </button>
             </div>
 
             <div class="text-center">
-                <small>
+                <small class="text-muted">
                     Don’t have an account?
-                    <a asp-controller="Account" asp-action="Register" class="text-decoration-none">Register</a>
+                    <a asp-controller="Account" asp-action="Register" class="text-decoration-none fw-semibold">Register here</a>
                 </small>
             </div>
         </form>
@@ -45,7 +82,15 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
     <script>
-        // Show Toast if login failed
+        // Torch effect logic
+        document.addEventListener('mousemove', function (e) {
+            const x = (e.clientX / window.innerWidth) * 100;
+            const y = (e.clientY / window.innerHeight) * 100;
+            document.body.style.setProperty('--x', `${x}%`);
+            document.body.style.setProperty('--y', `${y}%`);
+        });
+
+        // Optional: Bootstrap toast if needed
         window.onload = function () {
             var toastEl = document.getElementById('toastMessage');
             if (toastEl) {
